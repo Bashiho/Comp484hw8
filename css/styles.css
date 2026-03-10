@@ -15,7 +15,7 @@ html {
 
 body {
     background: #BAC1B8;
-    width: 70%;
+    /* width: 70%; */
     margin: 0 auto;
 }
 
@@ -25,7 +25,10 @@ header, footer {
 }
 
 header {
-    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 footer {
@@ -65,14 +68,23 @@ a {
     font-family: "Roboto Slab", serif;
     display: block;
     margin-top: 0px;
-    background-color: #0c7c59;
+    background-image: url(../images/edu_background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
-.profile-img {
-    border-radius: 50%;
-    /* width: 300px;
-    float: left;
-    margin-right: 30px; */
+.about-me {
+    padding-top: 50px;
+    display: flex;
+    background: #58A4B0;
+    justify-content: center;
+    align-items: center;
+}
+
+.alpha-bg {
+    background: rgba(12,124,89,0.5);
 }
 
 .content-wrap {
@@ -99,4 +111,27 @@ a {
     width: 70%;
     float: left;
     min-height: 225px;
+}
+
+.profile-img {
+    border-radius: 50%;
+}
+
+.topnav {
+    background-color: #2b303a;
+    overflow: hidden; 
+    justify-content: center;
+    align-items: center
+}
+
+.topnav a{
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #99FFB8;
+    color: #2b303a;
 }

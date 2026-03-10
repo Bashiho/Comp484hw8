@@ -13,18 +13,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Custom Icons -->
+    <script src="https://kit.fontawesome.com/bbe81d3334.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <img class="profile-img column-narrow" src="./images/portrait.jpg" alt="Russell de Vries">
-        <div class="column-wide">
-            <h1>Russell de Vries</h1>
-            <h2>Software Developer</h2>
-            <p>Computer Science student at CSUN.</p>
+        <div class="topnav">
+            <nav>
+                <a href="#about-me">About Me</a>
+                <a href="#work">Work</a>
+                <a href="#education">Education</a>
+                <a href="./files/resume.pdf" target="_blank" downloa="resume.pdf"><i class="fa-solid fa-download"></i></a>
+            </nav>
         </div>
     </header>
     
     <main> 
+        <div class="about-me">
+            <section id="about-me">
+                <img class="profile-img column-narrow" src="./images/portrait.jpg" alt="Russell de Vries">
+                <div class="column-wide">
+                    <h1>Russell de Vries</h1>
+                    <h2>Software Developer</h2>
+                    <p>Computer Science student at CSUN.</p>
+                </div>
+            </section>
+        </div>
+
         <section id="work">
             <div class="content-wrap">
                 <h2>Work Experience</h2>
@@ -52,12 +68,19 @@
         </section>
 
         <section id="education">
-            <div class="content-wrap">
-                <h2>Education</h2>
+            <div class="alpha-bg">
+                <div class="content-wrap">
+                    <h2>Education</h2>
 
-                <h3>CSUN, 2023-2026</h3>
-                <p>Bachelors in Computer Science in Progress</p>
-                <p>Working towards a Bachelors degree in Computer Science, expected to graduate this semester.</p>
+                    <h3>CSUN, 2023-2026</h3>
+                    <p>Bachelors in Computer Science in Progress</p>
+                    <p>Working towards a Bachelors degree in Computer Science, expected to graduate this semester.</p>
+                    <p>3.5 GPA</p>
+
+                    <h3>Northridge Academy High School, 2019-2023</h3>
+                    <p>Graduated Class of 2023</p>
+                    <p>3.8 GPA</p>
+                </div>
             </div>
         </section>
     </main>
@@ -67,9 +90,9 @@
             <h2>Contact me:</h2>
             <div class="contact-info">
                 <div>
-                    <a href="mailto:russelldevries74@gmail.com">russelldevries74@gmail.com</a>
-                    <!-- a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a> -->
-                    <!-- <a href="#" target="_blank">LinkedIn</a> -->
+                    <a href="mailto:russelldevries74@gmail.com"><i class="fa-solid fa-envelope"></i>russelldevries74@gmail.com</a>
+                    <a href="https://bashiho.github.io/" target="_blank">My website</a>
+                    <a href="https://github.com/Bashiho" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <p>Copyright 2026 by Russell de Vries</p>
